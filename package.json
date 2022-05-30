@@ -52,7 +52,6 @@
     "postrelease": "yarn build && yarn update-samples",
     "generate-api": "node ./dist/bin/orval.js --config ./samples/react-query/basic/orval.config.ts --watch",
     "generate-api-2": "node ./dist/bin/orval.js --config /Users/koen.vangeert/workspaces/collibra/data-privacy-policy-enforcement/frontend/orval.config.ts --watch",
-    "prepare": "husky install && cd ./samples/react-query/basic && yarn",
     "commitlint": "commitlint",
     "update-samples": "zx ./scripts/update-samples.mjs"
   },
