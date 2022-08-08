@@ -4766,8 +4766,8 @@ m();
 var qe = (e, t) => {
   let r = { ...t };
   if (r != null && r.allOf) {
-    let n = r.oneOff;
-    (r = { ...r, ...e.mergeAllOf(r) }), (r.oneOff = n);
+    let n = r.oneOf;
+    (r = { ...r, ...e.mergeAllOf(r) }), (r.oneOf = n);
   }
   return (
     r != null &&

@@ -8,9 +8,9 @@ export const mergeAllOf = (
   let schema = { ...inputSchema };
   // test case [TopLevelAllOf]
   if (schema?.allOf) {
-    const oneOff = schema.oneOff;
+    const oneOf = schema.oneOf;
     schema = { ...schema, ...parser.mergeAllOf(schema) };
-    schema.oneOff = oneOff;
+    schema.oneOf = oneOf;
   }
   // test case [NestedAllOf]
   if (schema?.properties) {

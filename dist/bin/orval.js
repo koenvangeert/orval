@@ -4,18 +4,18 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 ('use strict');
-var _chunkE6W7RAETjs = require('../chunk-E6W7RAET.js');
-_chunkE6W7RAETjs.b.call(void 0);
+var _chunk54NON4O4js = require('../chunk-54NON4O4.js');
+_chunk54NON4O4js.b.call(void 0);
 var _cac = require('cac');
 var _chalk = require('chalk');
 var _chalk2 = _interopRequireDefault(_chalk);
 var o = _cac.cac.call(void 0, 'orval');
-_chunkE6W7RAETjs.e.call(void 0, {
-  name: _chunkE6W7RAETjs.a.name,
-  version: _chunkE6W7RAETjs.a.version,
-  description: _chunkE6W7RAETjs.a.description,
+_chunk54NON4O4js.e.call(void 0, {
+  name: _chunk54NON4O4js.a.name,
+  version: _chunk54NON4O4js.a.version,
+  description: _chunk54NON4O4js.a.description,
 });
-o.version(_chunkE6W7RAETjs.a.version);
+o.version(_chunk54NON4O4js.a.version);
 o.command(
   '[config]',
   'generate client with appropriate type-signatures from OpenAPI specs',
@@ -38,10 +38,10 @@ o.command(
   .option('--tsconfig [path]', 'path to your tsconfig file')
   .action(async (m, t) => {
     if (
-      _chunkE6W7RAETjs.c.call(void 0, t.input) &&
-      _chunkE6W7RAETjs.c.call(void 0, t.output)
+      _chunk54NON4O4js.c.call(void 0, t.input) &&
+      _chunk54NON4O4js.c.call(void 0, t.output)
     ) {
-      let i = await _chunkE6W7RAETjs.H.call(void 0, {
+      let i = await _chunk54NON4O4js.H.call(void 0, {
         input: t.input,
         output: {
           target: t.output,
@@ -55,14 +55,14 @@ o.command(
         },
       });
       if (t.watch)
-        _chunkE6W7RAETjs.K.call(
+        _chunk54NON4O4js.K.call(
           void 0,
           t.watch,
           async () => {
             try {
-              await _chunkE6W7RAETjs.L.call(void 0, process.cwd(), i);
+              await _chunk54NON4O4js.L.call(void 0, process.cwd(), i);
             } catch (n) {
-              _chunkE6W7RAETjs.d.call(
+              _chunk54NON4O4js.d.call(
                 void 0,
                 _chalk2.default.red(`\u{1F6D1}  ${n}`),
               );
@@ -72,15 +72,15 @@ o.command(
         );
       else
         try {
-          await _chunkE6W7RAETjs.L.call(void 0, process.cwd(), i);
+          await _chunk54NON4O4js.L.call(void 0, process.cwd(), i);
         } catch (n) {
-          _chunkE6W7RAETjs.d.call(
+          _chunk54NON4O4js.d.call(
             void 0,
             _chalk2.default.red(`\u{1F6D1}  ${n}`),
           );
         }
     } else
-      await _chunkE6W7RAETjs.M.call(void 0, t.config, {
+      await _chunk54NON4O4js.M.call(void 0, t.config, {
         projectName: t.project,
         watch: t.watch,
         clean: t.clean,
